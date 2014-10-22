@@ -42,7 +42,7 @@ var twit = new twitter({
     access_token_secret: 'pLZb2BfcQCAUX4R32SRiu0s8WQVnAuxBVHBUK4iByTWee'
 });
 
-var criteria = ['13,45,100,30']; //<-- filter by location(s) (ex: Thailand)
+var criteria = ['13,45,100,30']; //<-- filter by location(s) (ex: New York)
 //var criteria=['this','that']; //<-- filter by term(s) (ex: this OR that)
 
 twit.stream('statuses/filter', { locations: criteria }, function(stream) { // possibilities {track: criteria} OR {locations: criteria}
